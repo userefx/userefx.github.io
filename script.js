@@ -2,6 +2,7 @@ document.querySelector(".menu-button").onclick = function() {
   document.querySelector(".sidebar").style.display = "block";
 }
 
+console.log("javascript active")
 
 document.querySelector(".close-button").onclick = function() {
   document.querySelector(".sidebar").style.display = "none";
