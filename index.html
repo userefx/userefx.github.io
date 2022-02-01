@@ -1,1 +1,188 @@
-<h1> Hello world </h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <title>REFX</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+<link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1369175445434867718/Yx6d6X3Q_400x400.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <div class="sidebar-holder"></div>
+    <div class="sidebar">
+      <div class="top">
+        <img src="https://pbs.twimg.com/profile_images/1369175445434867718/Yx6d6X3Q_400x400.jpg" class="logo">
+        <h2>REFX</h2><button class="close-button" id="close-button">Close</button>
+      </div>
+      <div class="links">
+        <p>WEBSITE</p>
+        <button class="side-button other-link" onclick="window.scrollTo({top: document.querySelector('.more-info').offsetTop-150,behavior: 'smooth',});"><i class="fas fa-home"></i> About us</button>
+        <button class="side-button other-link" onclick="window.scrollTo({top: document.querySelector('.works').offsetTop-150,behavior: 'smooth',});"><i class="fas fa-fire"></i> Our work</button>
+        <button class="side-button other-link" onclick="window.scrollTo({top: document.querySelector('.skills').offsetTop-150,behavior: 'smooth',});"><i class="fas fa-rocket"></i> The Team</button>
+        <p>Social Links</p>
+        <button class="side-button social-link" onclick="window.open('https://twitter.com/')"><i class="fab fa-twitter"></i> Twitter </button>
+        <button class="side-button social-link" onclick="window.open('https://discord.gg/vwRa5NY8SH')"><i class="fab fa-discord"></i>  Discord</button>
+        <p>For Comissions Contact</p>
+        <button class="side-button social-link"><i class="fab fa-discord"></i>  Rilo#8078</button>
+      </div>
+      <div class="bottom">Something here</div>
+    </div>
+    <div class="content">
+      <div class="nav">
+        <div class="left" id="nav-left">
+          <button class="menu-button"><i class="fas fa-bars"></i></button>
+        </div>
+        <div class="right">
+          <div class="nav-buttons">
+            <a class="nav-button" onclick="window.scrollTo({top: document.querySelector('.greet').offsetTop-150,behavior: 'smooth',});">Home</a>
+            <a class="nav-button" onclick="window.scrollTo({top: document.querySelector('.more-info').offsetTop-150,behavior: 'smooth',});">About</a>
+            <a class="nav-button" onclick="window.scrollTo({top: document.querySelector('.works').offsetTop-150,behavior: 'smooth',});">More examples</a>
+            <button class="contact nav-button" class="side-button social-link" onclick="window.open('https://discord.gg/vwRa5NY8SH')"><i class="fab fa-discord"></i>‏‏‎ ‎ Server</button>
+          </div>
+        </div>
+      </div>
+      <div class="greet">
+        <h1>Welcome to REFX</h1>
+        <p style="max-width: 450px; text-align: center;">Hello welcome to REFX we are a team of Roblox graphic designers based around blender and photoshop graphic design if you would like to place a order or have any inquiries or questions please contact me at Rilo#8078 or join the discord server</p>
+      </div>
+      <h2 style="margin-left: 30px; marign-top: 30px;">Our Team</h2>
+      <div class="skills">
+        <div class="skill" id="skill">
+          <div class="pfp"></div>
+          <pfp class="name">Someone</pfp>
+          <p class="quote">"Some quote here"</p>
+        </div>
+        <div class="skill" id="skill">
+          <div class="pfp"></div>
+          <pfp class="name">Someone</pfp>
+          <p class="quote">"Some quote here"</p>
+        </div>
+        <div class="skill" id="skill">
+          <div class="pfp"></div>
+          <pfp class="name">Someone</pfp>
+          <p class="quote">"Some quote here"</p>
+        </div>
+      </div>
+      <h2 style="margin-left: 30px; marign-top: 30px;">Our Creations</h2>
+      <p class="medium" style="margin-left: 30px; marign-top: 10px; font-size: 15px; color: gray;">Creations created by our team members.</p>
+      <p class="medium" style="margin-left: 30px; marign-top: 30px;"><i class="fas fa-crown"></i> ROXx's Creations</p>
+      <div class="works">
+        <div class="work">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-roxx">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-roxx">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-roxx">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+
+      </div>
+      <button class="show-more roxx">View all</button>
+      <p class="medium" style="margin-left: 30px; marign-top: 30px;"><i class="fas fa-fire"></i> Rilo's Creations</p>
+      <div class="works">
+        <div class="work">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-rilo">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-rilo">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-rilo">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+      </div>
+      <button class="show-more rilo">View all</button>
+      <p class="medium" style="margin-left: 30px; marign-top: 30px;"><i class="fas fa-fire"></i> Ethcor's Creations</p>
+      <div class="works">
+        <div class="work">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-ethcor">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-ethcor">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+        <div class="work work-hidden-ethcor">
+          <p class="creator">Creation name</p>
+          <p class="desc">This is something, an image that says something because its an example.</p>
+          <img src="https://www.dafont.com/img/illustration/s/o/something.jpg" class="work-img">
+        </div>
+      </div>
+      <button class="show-more ethcor">View all</button>
+      <div class="more-info">
+        <h2 style="margin-left: 30px; marign-top: 30px;">More info about us!</h2>
+        <p class="medium">Title</p>
+        <p class="text">
+          Hello welcome to REFX we are a team of Roblox graphic designers based around blender and photoshop graphic design if you would like to place a order or have any inquiries or questions please contact me at Rilo#8078 or join the discord server
+        </p>
+      </div>
+      <h2 style="margin-left: 30px; marign-top: 30px;">My social links</h2>
+      <div class="home-social-links">
+        <div class="home-social-link twitter" onclick="window.open('https://twitter.com/')">
+          <h1><i class="fab fa-twitter"></i></h1>
+          <div class="bottom">Twitter</div>
+        </div>
+        <div class="home-social-link discord" onclick="window.open('https://discord.gg/vwRa5NY8SH')">
+          <h1><i class="fab fa-discord"></i></h1>
+          <div class="bottom" >Discord</div>
+        </div>
+      </div>
+
+
+  </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
