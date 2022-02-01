@@ -1,0 +1,558 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: rgb(28, 28, 28);
+  display: flex;
+}
+
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+.content {
+  width: calc(100vw - 250px);
+}
+
+
+@media screen and (max-width: 750px) {
+  .sidebar-holder {
+    display: none;
+  }
+  .content {
+    width: 100vw;
+  }
+  .sidebar {
+    display: none;
+  }
+  .nav .right a {
+    display: none;
+  }
+  .nav .right {
+    margin: 0;
+    width: 50%;
+  }
+  #nav-left {
+    display: flex;
+  }
+  #close-button {
+    display: inline-block;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  #skill {
+    height: 100px;
+    border-radius: 8px;
+  }
+  #skill h1 {
+    font-size: 14px;
+  }
+  #skill .bottom {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .text {
+    width: 240px;
+  }
+
+
+}
+
+
+.work-hidden-roxx {
+  display: none;
+}
+.work-hidden-rilo {
+  display: none;
+}
+.work-hidden-ethcor {
+  display: none;
+}
+
+.nav .left {
+  width: 50%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav .left button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: rgb(23, 23, 23);
+  position: fixed;
+  padding: 10px;
+}
+
+.sidebar-holder {
+  width: 250px;
+  height: 100vh;
+  background: rgb(23, 23, 23);
+}
+
+.sidebar .top {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: rgb(70, 50, 196);
+}
+
+.sidebar .links {
+  width: 100%;
+  height: calc(100vh - 160px);
+  border-top: rgb(57, 57, 57) 1px solid;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.sidebar .links p {
+  color: gray;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.side-button {
+  border: none;
+  background: none;
+  color: rgb(130, 130, 130);
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .5s;
+  margin: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding: 10px;
+}
+
+.social-link:hover {
+  background: rgb(104, 29, 255);
+  color: white;
+}
+
+.other-link:hover {
+  background: rgb(33, 29, 255);
+  color: white;
+}
+
+.sidebar .bottom {
+  width: 100%;
+  height: 90px;
+  margin-bottom: 10px;
+  background: rgb(35, 35, 35);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  background: rgb(23, 23, 23);
+}
+
+
+.nav .right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.nav-buttons {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  border-bottom: solid 1px white;
+}
+
+
+.close-button {
+  float: right;
+  margin-left: 50px;
+  padding: 7px;
+  background: rgb(255, 53, 53);
+  border: none;
+  border-radius: 4px;
+  display: none;
+}
+
+
+.greet {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-image: url(https://wallpaperaccess.com/full/1201130.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.greet h1 {
+  margin: 0;
+  color: white;
+}
+.greet p{
+  color: white
+}
+
+
+div {
+  border: solidd red;
+}
+
+.contact {
+  box-sizing: border-box;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  background: rgb(70, 70, 255);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.logo {
+  max-height: 50%;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.content1 {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  justify-items: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+
+}
+.content1 .text {
+  width: 600px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.content1 img {
+  max-height: 200px;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+
+
+
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.skill {
+  width: 300px;
+  min-height: 200px;
+  margin: 15px;
+  border-radius: 10px;
+  border:  1px solid;
+  border-color: rgb(150, 144, 255);
+  text-align: center;
+  color: white;
+  box-shadow: black 0 10px 10px 3px;
+  margin-top: 25px;
+}
+
+.skill .pfp {
+  width: 100px;
+  height: 100px;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 10px auto;
+  margin-top: -50px;
+  background-image: url(https://pbs.twimg.com/media/E9sN5jzVUAUgYHn.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.skill .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.skill .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-style: italic;
+}
+
+
+
+
+
+.works {
+  width: 90%;
+  min-height: 350px;
+  display: flex;
+  border-radius: 6px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+
+.work {
+  width: 300px;
+  min-height: 300px;
+  border: rgb(63, 63, 63) 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.work .creator {
+  color: gray;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.work .desc {
+  font-size: 15px;
+}
+
+.work .work-img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+
+.show-more {
+  background: linear-gradient(to right, rgb(74, 74, 255), rgb(106, 76, 255));
+  margin-right: 30px;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.home-social-links {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.home-social-link {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgb(47, 165, 255), rgb(47, 123, 255));
+  text-align: center;
+  color: white;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.home-social-link h1 {
+  width: 100%;
+  height: 65%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+}
+
+.home-social-link .bottom {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 21px;
+}
+
+
+.reddit {
+  background: linear-gradient(to right, rgb(255, 84, 84), rgb(255, 67, 34))
+}
+
+
+.discord {
+  background: linear-gradient(to right, rgb(84, 115, 255), rgb(57, 47, 255))
+}
+
+
+
+
+
+
+.more-info .medium {
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 30px;
+  font-size: 18px;
+  color: rgb(186, 186, 186);
+}
+
+.more-info .text {
+  margin-top: 35px;
+  margin-left: 30px;
+  max-width: 450px;
+  color: rgb(186, 186, 186);
+}
+
+
+
+
+
+
+
+
+.footer {
+  margin-top: 100px;
+  min-height: 250px;
+  width: 100%;
+  display: flex;
+  background: rgb(24, 24, 24);
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.footer .author {
+  height: 240px;
+  width: 240px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.medium {
+  font-weight: bold;.skill {
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  border-radius: 10px;
+  background: linear-gradient(rgb(116, 47, 255), rgb(57, 47, 255));
+  text-align: center;
+  color: white;
+}
+
+.skill h1 {
+  width: 100%;
+  height: 75%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill .bottom {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.small {
+  font-style: italic;
+  margin: 7px;
+}
+
+.footer .author img {
+  max-height: 40%;
+  margin: 10px;
+}
+
+.social-links {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.e {
+  display: inline-block;
+  margin: 10px;
+  color: black;
+}
+
+.smaller {
+  color: rgb(61, 61, 61);
+  font-weight: bold;
+  font-size: 13px;
+  font-family: "Arial", sans-serif;
+  margin: 15px;
+}
+
+
